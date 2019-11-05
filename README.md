@@ -14,15 +14,21 @@ Join our awesome community! Here is how you can connect with us:
 - [Messanger](https://m.me/104484064333760) - if you want to chat on Facebook
 - [Email](mailto:contact@sellfino.com) - whenever we are out of touch, drop us a message
 
+<img src="https://www.sellfino.com/images/screen.jpg">
+
 ## Apps
 
 | | App | Status | Description |
 |---------|---------|--------|-------------|
-| <img width="30" src="https://sam.sellfino.com/asset/apps/OutOfStockManager/icon.png"> | [Out of Stock Manager] | ![ready] | Let your customers know when out of stock products are available again
-| <img width="30" src="https://sam.sellfino.com/asset/apps/MetafieldsEditor/icon.png"> | [Metafields Editor] | ![ready] | Edit metafields for products, collections, store and more
-| <img width="30" src="https://sam.sellfino.com/asset/apps/ZeroStockToHide/icon.png"> | [Zero Stock to Hide] | ![ready] | Hides products from your store automatically when out of stock
-| <img width="30" src="https://sam.sellfino.com/asset/apps/LowStockWatcher/icon.png"> | Low Stock Watcher | ![doing] | Automate email alerts for low stock products
-| <img width="30" src="https://sam.sellfino.com/asset/apps/PreOrderCreator/icon.png"> | Pre-Order Creator | ![doing] | Manage pre-order & coming-soon products
+| <img width="30" src="https://www.sellfino.com/images/out-of-stock-icon.png"> | [Out of Stock Manager] | ![ready] | Let your customers know when out of stock products are available again
+| <img width="30" src="https://www.sellfino.com/images/metafields.png"> | [Metafields Editor] | ![ready] | Edit metafields for products, collections, store and more
+| <img width="30" src="https://www.sellfino.com/images/zero-stock-icon.png"> | [Zero Stock to Hide] | ![ready] | Hides products from your store automatically when out of stock
+| <img width="30" src="https://www.sellfino.com/images/low-stock-icon.png"> | Low Stock Watcher | ![doing] | Automate email alerts for low stock products
+| <img width="30" src="https://www.sellfino.com/images/preorder-icon.png"> | Pre-Order Creator | ![doing] | Manage pre-order & coming-soon products
+| <img width="30" src="https://www.sellfino.com/images/3d-icon.png"> | 3D Rotate | ![soon] | Display full perspective of the product in your theme
+| <img width="30" src="https://www.sellfino.com/images/faq-icon.png"> | FAQ for Products | ![soon] | Let your customers ask questions and manage the answers
+| <img width="30" src="https://www.sellfino.com/images/loyalty-icon.png"> | Loyalty Program | ![soon] | Reward your customers with discounts and other bonuses
+| | *More to come* | ![soon] | Join [Discord](https://discordapp.com/invite/wrFnzZ3) and send your ideas for new apps
 
 [Out of Stock Manager]: https://github.com/sellfino/app-out-of-stock-manager
 [Metafields Editor]: https://github.com/sellfino/app-metafields-editor
