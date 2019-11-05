@@ -14,6 +14,7 @@ Join our awesome community! Here is how you can connect with us:
 - [Messanger](https://m.me/104484064333760) - if you want to chat on Facebook
 - [Email](mailto:contact@sellfino.com) - whenever we are out of touch, drop us a message
 
+
 <img src="https://www.sellfino.com/images/screen.jpg">
 
 ## Apps
@@ -37,3 +38,12 @@ Join our awesome community! Here is how you can connect with us:
 [ready]: https://img.shields.io/badge/ready-success.svg
 [doing]: https://img.shields.io/badge/in%20progress-yellow.svg
 [soon]: https://img.shields.io/badge/soon-4655FD.svg
+
+## Requirements
+
+## Installation
+
+## Credits
+
+## Copyright
+Copyright (c) 2019-present, Lucas Szarzynski
