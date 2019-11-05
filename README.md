@@ -44,6 +44,9 @@ Join our awesome community! Here is how you can connect with us:
 ## Installation
 
 ## Credits
+Here is the list of awesome stuff we used to build our platform:
+- [Argon Dashboard](https://www.creative-tim.com/product/argon-dashboard) - one of the most beautiful (and free) dashboard themes
+- [Icons8 Animal Icons](https://icons8.com/icon/pack/animals/color) - the whole library of fantastic icons (we use animals because they look cute :heart_eyes_cat:)
 
 ## Copyright
 Copyright (c) 2019-present, Lucas Szarzynski
