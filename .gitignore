@@ -1,0 +1,5 @@
+/vendor
+/queue
+.env
+.access_token
+db.json

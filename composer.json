@@ -1,0 +1,14 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Sellfino\\": "sellfino/",
+            "Apps\\": "apps/"
+        }
+    },
+    "require": {
+        "firebase/php-jwt": "^5.0",
+        "liquid/liquid": "^1.4",
+        "phpmailer/phpmailer": "^6.0",
+        "vlucas/phpdotenv": "^3.6"
+    }
+}
