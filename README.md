@@ -65,10 +65,35 @@ https://your-app-domain.com/auth/shopify/callback/
 - **2.1.** Copy whole code from the Sellfino repository and upload it to your server.
 - **2.2.** Run `composer install` in the root folder. If you don't have access to *composer*, go [here](https://github.com/sellfino/vendors) and copy everything into the root. These are all vendors that are needed to run the platform.
 - **2.3.** Rename `.env.sample` to `.env` and edit this file.
-- **2.4.** Replace API keys with those that you got earlier. Under *HOST* provide URL to your hosting where you put the platform.
+- **2.4.** Replace API keys with those that you got earlier. Under *HOST* provide URL to your hosting where you put the platform. Under *SCOPE* there are requirements needed to make future apps work - you can remove or add new ones based on what you need. Full list is [here](https://help.shopify.com/en/api/getting-started/authentication/oauth/scopes).
 - **2.5.** Point your domain to `public_html` folder in your hosting control panel.
 
 #### 3. Adding stores
+- **3.1.** Go to your app's domain (i.e. https://your-app-domain.com) - you should see form to provide URL of store.
+- **3.2.** Add store's URL of yours or your client. Remember to use domain with `*.myshopify.com` suffix.
+- **3.3.** You should be redirected to your store - accept everything and it's done - you can go to the new master app (Sellfino App Store) and add apps you have. Congratulations! :tada:
+- **3.4.** You can add as many stores as you want. Every store has its own folder under `stores` directory and JSON database.
+
+#### 4. Apps
+- **4.1.** To install new app, you need to copy folder of this app and put it under `apps` directory.
+- **4.2.** When you go to the master app, you should see it in the *Disabled* list. Now you only need to click green button to activate it.
+
+## Custom apps
+Based on the apps that we implemented, you can write your custom ones. Please make sure that you use unique handle - it should be also the same as the app folder's name.
+
+:exclamation: **You can also have apps that are listed for selected stores.**
+
+To do that, open `info.json` file of the app and add:
+```
+"private":"client-store.myshopify.com"
+```
+
+If you need to show it on multiple stores, separate domains with coma:
+```
+"private":"client-store.myshopify.com,second-client-store.myshopify.com"
+```
+
+Use domains with `*.myshopify.com` suffix.
 
 ## Queue
 
