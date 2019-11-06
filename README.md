@@ -77,6 +77,7 @@ https://your-app-domain.com/auth/shopify/callback/
 #### 4. Apps
 - **4.1.** To install new app, you need to copy folder of this app and put it under `apps` directory.
 - **4.2.** When you go to the master app, you should see it in the *Disabled* list. Now you only need to click green button to activate it.
+- **4.3.** Go to the *Settings* and provide SMTP details if you want to send emails to your customers.
 
 ## Custom apps
 Based on the apps that we implemented, you can write your custom ones. Please make sure that you use unique handle - it should be also the same as the app folder's name.
