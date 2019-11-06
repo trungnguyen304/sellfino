@@ -44,23 +44,31 @@ Join our awesome community! Here is how you can connect with us:
 - **SSL Certificate** - embedded apps are obliged to use https when using API. Either buy one of the SSL Certificates or find hosting with free Let's Encrypt feature (i.e. Bluehost.com)
 - **Shopify Partner Account** - you need API keys to authenticate the app
 - **Cron** - this is optional, but useful when you need to manage heavy processes (like importing 1k products, sending emails, etc.)
+- **Composer** - If you don't have access to *composer*, go [here](https://github.com/sellfino/vendors) and copy everything into the root folder of the platform.
 
 ## Installation
 #### 1. Shopify Partner Account
-1.1. Go to the Shopify Partner website [https://partners.shopify.com](https://partners.shopify.com) and setup your account.
-1.2. When it is ready, login to your new account and click *Apps*.
-1.3. Now click *Create App*.
-1.4. Name your app first (i.e. Sellfino App Store), then provide URL to your hosting, where you will put our platform (in our example: https://your-app-domain.com/).
-1.5. In *Whitelisted redirection URL(s)* provide these links (keep both with slash and without at the end):
+- **1.1.** Go to the Shopify Partner website [https://partners.shopify.com](https://partners.shopify.com) and setup your account.
+- **1.2.** When it is ready, login to your new account and click *Apps*.
+- **1.3.** Now click *Create App*.
+- **1.4.** Name your app first (i.e. Sellfino App Store), then provide URL to your hosting, where you will put our platform (in our example: https://your-app-domain.com/).
+- **1.5.** In *Whitelisted redirection URL(s)* provide these links (keep both with slash and without at the end):
 `
 https://your-app-domain.com/auth/shopify/callback
 https://your-app-domain.com/auth/shopify/callback/
 `
-1.6. Click *Create App* button on top bar.
-1.7. Copy and save *API key* and *API secret key* - we will use them later in our environment variables.
-1.8. Go to the *Extensions* and make sure that *Embedded app* is active (green tick box should be right to this title)
+- **1.6.** Click *Create App* button on top bar.
+- **1.7.** Copy and save *API key* and *API secret key* - we will use them later in our environment variables.
+- **1.8.** Go to the *Extensions* and make sure that *Embedded app* is active (green tick box should be right to this title).
 
-## Adding stores
+#### 2. Platform setup
+- **2.1.** Copy whole code from the Sellfino repository and upload it to your server.
+- **2.2.** Run `composer install` in the root folder. If you don't have access to *composer*, go [here](https://github.com/sellfino/vendors) and copy everything into the root. These are all vendors that are needed to run the platform.
+- **2.3.** Rename `.env.sample` to `.env` and edit this file.
+- **2.4.** Replace API keys with those that you got earlier. Under *HOST* provide URL to your hosting where you put the platform.
+- **2.5.** Point your domain to `public_html` folder in your hosting control panel.
+
+#### 3. Adding stores
 
 ## Queue
 
