@@ -46,6 +46,19 @@ Join our awesome community! Here is how you can connect with us:
 - **Cron** - this is optional, but useful when you need to manage heavy processes (like importing 1k products, sending emails, etc.)
 
 ## Installation
+#### 1. Shopify Partner Account
+1.1. Go to the Shopify Partner website [https://partners.shopify.com](https://partners.shopify.com) and setup your account.
+1.2. When it is ready, login to your new account and click *Apps*.
+1.3. Now click *Create App*.
+1.4. Name your app first (i.e. Sellfino App Store), then provide URL to your hosting, where you will put our platform (in our example: https://your-app-domain.com/).
+1.5. In *Whitelisted redirection URL(s)* provide these links (keep both with slash and without at the end):
+`
+https://your-app-domain.com/auth/shopify/callback
+https://your-app-domain.com/auth/shopify/callback/
+`
+1.6. Click *Create App* button on top bar.
+1.7. Copy and save *API key* and *API secret key* - we will use them later in our environment variables.
+1.8. Go to the *Extensions* and make sure that *Embedded app* is active (green tick box should be right to this title)
 
 ## Adding stores
 
