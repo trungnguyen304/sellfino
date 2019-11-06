@@ -40,12 +40,16 @@ Join our awesome community! Here is how you can connect with us:
 [soon]: https://img.shields.io/badge/soon-4655FD.svg
 
 ## Requirements
-- **PHP Server** - whole platform is flat-file based so simple hosting should do the work
+- **PHP 7.*** - whole platform is flat-file based so simple hosting should do the work
 - **SSL Certificate** - embedded apps are obliged to use https when using API. Either buy one of the SSL Certificates or find hosting with free Let's Encrypt feature (i.e. Bluehost.com)
 - **Shopify Partner Account** - you need API keys to authenticate the app
 - **Cron** - this is optional, but useful when you need to manage heavy processes (like importing 1k products, sending emails, etc.)
 
 ## Installation
+
+## Adding stores
+
+## Queue
 
 ## Credits
 Here is the list of awesome stuff we used to build our platform:
