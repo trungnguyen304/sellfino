@@ -81,7 +81,7 @@ https://your-app-domain.com/auth/shopify/callback/
 ## Custom apps
 Based on the apps that we implemented, you can write your custom ones. Please make sure that you use unique handle - it should be also the same as the app folder's name.
 
-:exclamation: **You can also have apps that are listed for selected stores.**
+:exclamation: **You can also have apps that are listed for selected stores only.**
 
 To do that, open `info.json` file of the app and add:
 ```
@@ -96,6 +96,16 @@ If you need to show it on multiple stores, separate domains with coma:
 Use domains with `*.myshopify.com` suffix.
 
 ## Queue
+There are some tasks that are quite heavy for server to process - importing large number of products, sending thousends of emails, etc. Without proper solution, you could end with blocked pipeline of action, waiting minutes or more for task to finish, until you could do next thing. We can solve this problem with queues. 
+
+In simple words - instead of running the task immidiately, we postpone it to run it by **Cron**. Here is an example:
+- App wants to send email. Instead of sending right the way, platforms saves details of the email and other important things in JSON file, under `queue` folder. You can now do other things in your apps.
+- You setup Cron to run **Worker** that checks if there is any task to do - it's being done in the background. If Worker sees there is file in the `queue` folder, it reads it, start the program attached to it and deletes the file after that, so it will not be run in the next round.
+
+Here is the example how the code for Cron should look like (it will run every minute, 24/7):
+```
+* * * * * php /home/your-app-domain.com/public_html/worker.php
+```
 
 ## Credits
 Here is the list of awesome stuff we used to build our platform:
