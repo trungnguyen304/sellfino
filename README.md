@@ -72,7 +72,11 @@ https://your-app-domain.com/auth/shopify/callback/
 - **3.1.** Go to your app's domain (i.e. https://your-app-domain.com) - you should see form to provide URL of store.
 - **3.2.** Add store's URL of yours or your client. Remember to use domain with `*.myshopify.com` suffix.
 - **3.3.** You should be redirected to your store - accept everything and it's done - you can go to the new master app (Sellfino App Store) and add apps you have. Congratulations! :tada:
-- **3.4.** You can add as many stores as you want. Every store has its own folder under `stores` directory and JSON database.
+- **3.4.** If your or yours client store uses custom domain, you need to add it to the whitelist. After successful installation of the new store, in the root folder of the platform you should see `.domain` file. Add your all domains here and point them to `*.myshopify.com` primary domain of the store. It will filter all of the calls to your server and reject ones not from your stores. Example:
+```
+"yourdomain.com":"your-store-domain.myshopify.com"
+```
+- **3.5.** You can add as many stores as you want. Every store has its own folder under `stores` directory and JSON database.
 
 #### 4. Apps
 - **4.1.** To install new app, you need to copy folder of this app and put it under `apps` directory.
