@@ -11,7 +11,7 @@ $_token = $data['_token'];
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://kit.fontawesome.com/c92b81ac9c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
   <link rel="stylesheet" href="/assets/css/argon-dashboard.min.css" />
   <link rel="stylesheet" href="/assets/css/sellfino.css" />
   <script src="/assets/js/vue-dev.js"></script>
