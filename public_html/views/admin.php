@@ -35,7 +35,7 @@ $_token = $data['_token'];
 
     window.shopURL = 'https://<?php echo $shop; ?>';
     window.xdomain = '<?php echo $shop; ?>';
-    window._token = '<?php echo $_token; ?>';
+    window.xtoken = '<?php echo $_token; ?>';
 
   </script>
 </head>

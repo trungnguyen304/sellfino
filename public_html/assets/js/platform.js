@@ -33,8 +33,8 @@ new Vue({
     Shopify: Shopify,
     Sortable: Sortable,
     fetchHeaders: new Headers({
-      'X-Shopify-Shop-Domain': window.xdomain, 
-      '_token': window._token
+      'X-Shopify-Shop-Domain': window.xdomain,
+      'X-Token': window.xtoken,
     })
   },
   watch: {

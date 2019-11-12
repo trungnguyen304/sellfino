@@ -138,10 +138,10 @@ Class Sellfino
     if (isset($_SERVER['HTTP_ORIGIN']) && !$validateHttp) {
 
       $origin = str_replace(['https://', 'http://', 'www.'], '', $_SERVER['HTTP_ORIGIN']);
-      $allowed_domains = explode(',', file_get_contents(DIR_ROOT . '.domains'));
+      $allowed_domains = json_decode(file_get_contents(DIR_ROOT . '.domains'), true);
       $validateHttp = true;
 
-      if (!in_array($origin, $allowed_domains)) {
+      if (!isset($allowed_domains[$origin])) {
 
         header('HTTP/1.1 401 Unauthorized', true, 401);
         die();
@@ -150,7 +150,7 @@ Class Sellfino
 
     }
 
-    if (!isset($_SERVER['HTTP__TOKEN']) || !$validateHttp) {
+    if (!isset($_SERVER['HTTP_X_TOKEN']) || !$validateHttp) {
 
       header('HTTP/1.1 401 Unauthorized', true, 401);
       die();
@@ -160,7 +160,7 @@ Class Sellfino
     try {
 
       $secretKey = base64_decode(API_SECRET); 
-      JWT::decode($_SERVER['HTTP__TOKEN'], $secretKey, ['HS512']);
+      JWT::decode($_SERVER['HTTP_X_TOKEN'], $secretKey, ['HS512']);
 
     } catch (Exception $e) {
 
