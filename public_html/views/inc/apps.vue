@@ -221,6 +221,8 @@ module.exports = {
   mounted: function() {
     var self = this
 
+    this.$root.viewPrevData = null
+
     url = '/api/apps'
     params = {
       method: 'GET',

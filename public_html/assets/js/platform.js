@@ -10,6 +10,7 @@ function errorCheck(res) {
 }
 
 Vue.prototype.shopURL = window.shopURL
+Vue.prototype.Shopify = Shopify
 Vue.prototype.img_url = function(src, size = 'small') {
   split = src.split('.')
   split[split.length - 2] = split[split.length - 2] + '_' + size
@@ -30,7 +31,6 @@ new Vue({
     viewPrevData: null,
     toast: false,
     shopURL: shopURL,
-    Shopify: Shopify,
     Sortable: Sortable,
     fetchHeaders: new Headers({
       'X-Shopify-Shop-Domain': window.xdomain,
