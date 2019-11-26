@@ -4,14 +4,15 @@ namespace Sellfino;
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+use Cocur\Slugify\Slugify;
 
 Class Helpers
 {
 
-  public static function error($code)
+  public static function error($code, $msg = '')
   {
 
-    header('HTTP/1.1 ' . $code, true, $code);
+    header('HTTP/1.1 ' . $code . ' ' . $msg, true, $code);
     echo json_encode(['error' => $code]);
     echo $code;
     die();
@@ -42,6 +43,14 @@ Class Helpers
     header('X-Frame-Options: GOFORIT');
     header('Location: ' . $url, true, 302);
     die();
+
+  }
+
+  public static function slugify($string)
+  {
+
+    $slugify = new Slugify();
+    return $slugify->slugify($string); 
 
   }
 

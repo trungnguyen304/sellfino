@@ -8,9 +8,18 @@ function errorCheck(res) {
     throw new Error(res.status + ' : ' + res.statusText);
   }      
 }
+function uniqid() {
+  out = Math.random().toString(36).substr(2, 9)
+  return ('id'+out);
+}
+function current_date() {
+  d = new Date()
+  return d.getFullYear() + "-" + ("0"+(d.getMonth()+1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2) + "T" + ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2) + ":" + ("0" + d.getSeconds()).slice(-2)
+}
 
 Vue.prototype.shopURL = window.shopURL
 Vue.prototype.Shopify = Shopify
+Vue.prototype.Draggable = Draggable
 Vue.prototype.img_url = function(src, size = 'small') {
   split = src.split('.')
   split[split.length - 2] = split[split.length - 2] + '_' + size

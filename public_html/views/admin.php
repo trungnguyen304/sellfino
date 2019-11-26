@@ -19,9 +19,11 @@ $_token = $data['_token'];
   <script src="/assets/js/vue-loader.js"></script>
   <script src="/assets/js/shopify.js"></script>
   <script src="/assets/js/sortable.js"></script>
+  <script src="/assets/js/vuedraggable.js"></script>
 
   <script>Vue.component('view-apps', window.httpVueLoader('/views/inc/apps.vue'))</script>
   <script>Vue.component('view-settings', window.httpVueLoader('/views/inc/settings.vue'))</script>
+  <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.6/lib/draggable.bundle.js"></script>
 
   <?php if(isset($data['assets'])) foreach ($data['assets'] as $asset) echo $asset; ?>
 
