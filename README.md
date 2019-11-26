@@ -25,9 +25,9 @@ Join our awesome community! Here is how you can connect with us:
 | <img width="30" src="https://www.sellfino.com/images/metafields.png"> | [Metafields Editor] | ![ready] | Edit metafields for products, collections, store and more
 | <img width="30" src="https://www.sellfino.com/images/zero-stock-icon.png"> | [Zero Stock to Hide] | ![ready] | Hides products from your store automatically when out of stock
 | <img width="30" src="https://www.sellfino.com/images/preorder-icon.png"> | [Pre-Order Creator] | ![ready] | Manage pre-order & coming-soon products
+| <img width="30" src="https://www.sellfino.com/images/faq-icon.png"> | [FAQ]| ![ready] | Let your customers ask questions and manage the answers
 | <img width="30" src="https://www.sellfino.com/images/low-stock-icon.png"> | Low Stock Watcher | ![doing] | Automate email alerts for low stock products
 | <img width="30" src="https://www.sellfino.com/images/3d-icon.png"> | 3D Rotate | ![soon] | Display full perspective of the product in your theme
-| <img width="30" src="https://www.sellfino.com/images/faq-icon.png"> | FAQ for Products | ![soon] | Let your customers ask questions and manage the answers
 | <img width="30" src="https://www.sellfino.com/images/loyalty-icon.png"> | Loyalty Program | ![soon] | Reward your customers with discounts and other bonuses
 | | *More to come* | ![soon] | Join [Discord](https://discordapp.com/invite/wrFnzZ3) and send your ideas for new apps
 
@@ -35,6 +35,7 @@ Join our awesome community! Here is how you can connect with us:
 [Metafields Editor]: https://github.com/sellfino/app-metafields-editor
 [Zero Stock to Hide]: https://github.com/sellfino/app-zero-stock-to-hide
 [Pre-Order Creator]: https://github.com/sellfino/app-preorder-creator
+[FAQ]: https://github.com/sellfino/app-faq
 
 [ready]: https://img.shields.io/badge/ready-success.svg
 [doing]: https://img.shields.io/badge/in%20progress-yellow.svg
