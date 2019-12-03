@@ -23,7 +23,7 @@ body { background: #f4f6f8; }
 @-o-keyframes skeleton { 0% { opacity: .45; } 100% { opacity: .9; } }
 @keyframes skeleton { 0% { opacity: .45; } 100% { opacity: .9; } }
 
-.avatar { background: none; }
+.avatar { background: none; overflow: hidden }
 .processing { opacity: .4; pointer-events: none; background: #f6f9fc; }
 .disabled { opacity: .4; pointer-events: none; }
 .pointer-disabled { pointer-events: none; }
