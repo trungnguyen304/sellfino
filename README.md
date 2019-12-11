@@ -6,6 +6,10 @@
 
 Sellfino **Open Source Shopify App Store** is the PHP & Vue.js based platform with free apps for Shopify and framework for developing custom ones. You can now use and modify apps that do the same work as your paid ones from offical Shopify Store - for free :punch:
 
+**All apps in one place!**
+
+*Developers!* Add as many client stores as you want! No more duplicating apps for every client. Let them share the same code - or write private apps that can be used on the selected stores.
+
 #### Support and Contribution
 
 Join our awesome community! Here is how you can connect with us:
